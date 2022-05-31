@@ -3,15 +3,9 @@ import mongoose from "mongoose";
 const MongoDB_URL = process.env.MongoDB_URL;
 
 const UserSchema = new mongoose.Schema({
-  name: {
-    type : String,
-  },
-  email: {
-    type : String,
-  },
-  password: {
-    type : String,
-  }
+  name : String,
+  email : String,
+  password : String
 });
 
 let userData
